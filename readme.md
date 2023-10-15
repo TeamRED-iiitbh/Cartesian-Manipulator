@@ -1,38 +1,34 @@
-# RoboArm
+# Design of Cartesian-based Cylindrical Manipulator
+## MarsQuest: Robotic Arm for Red Planet Exploration
 
-## Problem Statement
-Develop a robot capable of autonomously typing a given alpha-numeric sequence. The project involves two types of keyboards:
+*Pawan Maddheshiya, Shirshak Ghatak, Kumar Ujjawal, Vivek Kumar, Shrijal, Raj Mehta, Devyanshu Singhal*
 
-### Keyboard Specifications:
-**Type 1:**
-- Each key size: 5cm x 5cm
-- 1cm gap between keys
-- 16 total keys
-- Black keys with white characters
-- Customizable gap colors
+- **Department of Mechatronics and Automation Engineering,** Indian Institute of Information Technology, Bhagalpur, Bihar
+- **Department of Computer Science & Engineering,** Indian Institute of Information Technology, Bhagalpur, Bihar
 
-**Type 2:**
-- Each key size: 4cm x 4cm
-- 1cm gap between keys
-- 24 total keys
-- Black keys with white characters
-- Customizable gap colors
+**Keywords:** Cylindrical Manipulator, OpenCV, GRBL
 
-## Solution
-[Watch the Demo Video](https://user-images.githubusercontent.com/97799598/227696134-cd46ca04-2180-44d1-9945-973e23f56c74.mp4)
+**Abstract:**
+Our latest creation, The Vision-Guided Cylindrical Manipulator, is crafted for Mars Rover missions. Displaying streamlined kinematics that utilizes G-code, this device operates seamlessly and calibrates with ease via limit switches. With an end effector designed for collecting samples and, sensors and computer vision tools for onboard testing, this manipulator collects valuable data that is promptly transmitted to the base station through its onboard computer.
 
-### Steps Involved:
-**Computer Vision:**
-- Detecting all contours in the image
-- Defining the area range containing the keys
-- Cropping out each key
-- Processing and sending keys for recognition
-- Scaling pixel coordinates to world coordinates
-- Extracting sequence coordinates and converting to G-code
+## Introduction
 
-**Arduino Integration:**
-- Receiving and storing coordinates in a .txt file
-- Executing lines of the text file in a loop
-- Sending G-code to Arduino serial monitor using pyserial
+- Cylindrical manipulator robots have a cylindrical workspace and consist of linear and rotational movements.
+- Features vertical linear axis (Z-axis), radial linear axis (R-axis), and rotational axis (θ-axis) around the vertical axis.
+- Structure includes a vertical column mounted on a revolute joint at the base, with an arm extending radially and rotating around the column.
+- Advantages:
+  - Ability to reach around obstacles within the cylindrical workspace.
+  - Suitable for applications where access to the target object may be obstructed.
+  - Compact footprint due to vertical column and radial arm design.
+  - Cost-effective due to simplicity.
 
-This project demonstrates expertise in computer vision, robotics, and automation, showcasing the ability to solve complex problems through innovative technology solutions.
+- Common Applications:
+  - Industries: assembly, packaging.
+  - Tasks: loading, unloading machines where access to target object may be limited.
+
+- **Incorporating Vision Control with OpenCV:**
+  - Elevates robotic system capabilities.
+  - Enables real-time perception and interaction with the environment.
+  - Facilitates tasks: object recognition, tracking, manipulation.
+  - Enhances autonomy and versatility.
+  - Meets demand for automation in complex environments.
